@@ -31,7 +31,7 @@ h2 {
   text-align: center;
 }
 
-.item {
+.addItem {
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -47,8 +47,8 @@ input:checked+p {
   text-decoration-color: #A683E3;
 }
 
-input[type="checkbox"] {
-  margin: 20px;
+button[type="submit"] {
+  margin: 0px 20px;
 }
 
 p {
@@ -59,12 +59,12 @@ p {
   color: #00204a;
 }
 
-form {
+form.addItem {
   text-align: center;
   margin-left: 20px;
 }
 
-button {
+button.addButton {
   min-height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -73,6 +73,17 @@ button {
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
+  border-width: 0;
+}
+
+button.removeButton {
+  border-radius: 20%;
+  border-color: transparent;
+  background-color: #9060e3;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0px 6px 3px 6px;
   border-width: 0;
 }
 
@@ -95,4 +106,11 @@ input[type="text"]:focus {
 ::placeholder {
   color: grey;
   opacity: 1;
+}
+
+footer p {
+  padding: 40px;
+  font-size: 16px;
+  font-weight: 200;
+  color: #00204a;
 }
